@@ -1,0 +1,122 @@
+.footer {
+    position: relative;
+    background-image: url('../images/footer.jpg');
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 32px 0;
+    @media screen and (max-width: $bp-table) {
+           text-align: center;
+        }
+
+
+
+    &::before {
+        position: absolute;
+        background-image: url('../images/decor-bread-small.png');
+        background-repeat: no-repeat;
+        content: '';
+        z-index: 100;
+        width: 180px;
+        height: 120px;
+        bottom: 0;
+    }
+
+    &::after {
+        position: absolute;
+        background-image: url('../images/decor-bread-large.png');
+        background-repeat: no-repeat;
+        content: '';
+        width: 380px;
+        height: 190px;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    &__container {
+        display: flex;
+        gap: 20px;
+        @media screen and (max-width: $bp-table) {
+            flex-direction: column;
+            // flex-basis: 100%;
+            text-align: center;
+            }
+    }
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        flex-basis: 50%;
+        flex-grow: 1;
+        gap: 20px;
+        @media screen and (max-width: $bp-table) {
+                flex-direction: column;
+                align-items:center;
+                text-align: center;
+            }
+    }
+    &__address-link-block{
+        display: flex; 
+        gap: 20px;
+        @media screen and (max-width: $bp-table) {
+justify-content: center;          
+      align-items: center;
+            }
+    }
+    &__logo {
+        flex-grow: 1;
+    }
+    
+    &__menu {
+        flex-grow: 1;
+    }
+    
+    &__address {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+        @media screen and (max-width: $bp-table) {
+                flex-direction: column;
+            }
+    }
+    &__address-inner {
+        flex-grow: 1;
+    }
+        &__address-link {
+            color: var(--color-primary-light);
+            font-size: 16px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    
+        &__address-link:hover {
+            color: var(--color-brand-normal);
+        }
+    
+        &__address-copiright {
+            font-size: 14px;
+            color: var(--color-primary-light);
+            font-size: 16px;
+            font-weight: 300;
+        }
+    
+        &__address-icon {
+            fill: var(--color-primary-light);
+        }
+    
+        &__address-icon:hover {
+            fill: var(--color-brand-normal);
+        }
+    
+    
+    
+        &__address-menu {
+           
+        }
+    
+        &__address-info {
+            flex-grow: 1;
+        }
+}
+

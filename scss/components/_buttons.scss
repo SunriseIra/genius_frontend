@@ -1,0 +1,32 @@
+.button {
+    display: block;
+    border-radius: 8px;
+    border: 2px solid var(--color-brand-normal);
+    background: var(--color-brand-normal);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--color-brand-dark);
+    background-color: transparent;
+}
+
+.button:focus {
+    color: var(--color-brand-dark);
+    background-color: transparent;
+}
+
+/* .button:disabled {
+    color: gray;
+    background: lightgray;
+    cursor: not-allowed;
+} */
